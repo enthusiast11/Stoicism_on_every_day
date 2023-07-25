@@ -1,0 +1,189 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  color: azure;
+  background-image: url(/img/Греция.jpg);
+}
+
+.footer {
+  background-color: rgb(165, 130, 130);
+  border-bottom: 3px solid rgb(86, 69, 69);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__menu {
+  display: flex;
+}
+
+.logo {
+  margin-right: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: white;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__item {
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+}
+
+.main__area {
+  letter-spacing: normal;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  border: 7px solid rgb(69, 59, 59);
+  background-color: rgb(209, 172, 147);
+}
+
+.main__options {
+  display: block;
+}
+
+.main__bookmark {
+  cursor: pointer;
+}
+
+.main__comments {
+  margin-top: 20px;
+  width: 50%;
+  height: 32%;
+  border: 7px solid rgb(69, 59, 59);
+  background-color: rgb(209, 172, 147);
+}
+
+.form__main {
+  height: 100px;
+}
+
+.from__field {
+  resize: none;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 0;
+  border: 0;
+  background-color: #fff6f6;
+  border-bottom: 3px solid rgb(99, 39, 2);
+  padding: 10px;
+}
+.from__field:focus {
+  outline: none;
+}
+
+.form__btn-save {
+  background-color: #257cb7;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.form__btn-del {
+  background-color: #f1371e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cards {
+  margin-top: 100px;
+}
+
+.cards__area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.card {
+  box-shadow: 10px 5px 5px rgb(96, 87, 87);
+  cursor: pointer;
+  color: rgb(254, 254, 241);
+  width: 31.8%;
+  margin-top: 20px;
+  height: 490px;
+  background-color: rgb(209, 172, 147);
+  border: 7px solid rgb(69, 59, 59);
+  margin-right: 20px;
+}
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card__options {
+  padding: 20px 20px 5px 5px;
+}
+
+.card__main {
+  overflow: auto;
+  padding: 10px;
+  background-color: rgb(109, 145, 173);
+  width: 100%;
+  height: 50%;
+}
+
+.card__options table {
+  height: 150px;
+}
+
+.card__options table tr td:nth-child(1) {
+  color: #8e1818;
+}
+
+.card__comment {
+  overflow: auto;
+  height: 30px;
+}
